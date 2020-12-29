@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> marking </title>
+<style>   
+
+input { outline: none; }
+
+
+</style>
+
+</head>
+<body style= "background-color: #ccc;">
+
+	<div style="width:550px; height: 450px; background-color: 	#ff9999; margin:auto; border-radius:30px;	margin-top: 150px;" class="box2"> <br>
+<h2 style="margin-top: -10px; margin-left: 20px;">  `Know your total & percent & grade fill these` </h2> 
+<HR>
+    <h2 style=" margin-left: 50PX;"> <mark> practical marks</mark> </h2> 
+       <input  style=" background: transparent; border: none; margin-left: 30px; width: 100PX height:100px; border-bottom: 2px solid black" type="text" placeholder="Digital eletronics (lab)  "id="del" value="" > <span style="margin-left: 150px;">
+
+       	<input style=" background: transparent;border: none; width: 100PX height:100px;  border-bottom: 2px solid black; " placeholder="Electronics engineering (lab)" type="text" id="eel" value="" >  </span>
+<br> <br>
+	<input style=" background: transparent;border: none; width: 100PX height:100px;  border-bottom: 2px solid black;   margin-left: 30px;" placeholder=" PCB & electronics engineering (lab)" type="text" id="pcbl" value="" >
+
+	 <span style="margin-left: 150px;">
+
+       	<input style=" background: transparent;border: none; width: 100PX height:100px;  border-bottom: 2px solid black; " placeholder="General profficiency" type="text" id="gp" value="" >  </span>
+<hr>
+
+<h2 style=" margin-left: 50PX;" > <mark> Theory marks </mark></h2>
+<input style=" background: transparent;border: none; width: 100PX height:100px;  border-bottom: 2px solid black;   margin-left: 30px;" placeholder=" industrial psycology" type="text" id="ip" value="" >
+
+ <span style="margin-left: 150px;">
+
+       	<input style=" background: transparent;border: none; width: 100PX height:100px;  border-bottom: 2px solid black; " placeholder="Laser system" type="text" id="ls" value="" >  </span>
+
+</br> </br>
+<input style=" background: transparent;border: none; width: 100PX height:100px;  border-bottom: 2px solid black;   margin-left: 30px;" placeholder=" Fundameental of electronics" type="text" id="fed" value="" >
+
+
+ <span style="margin-left: 150px;">
+
+       	<input style=" background: transparent;border: none; width: 100PX height:100px;  border-bottom: 2px solid black; " placeholder="Digital electronics" type="text" id="de" value="" >  </span>
+
+<br>  </br>
+<input style=" background: transparent;border: none; width: 100PX height:100px;  border-bottom: 2px solid black;   margin-left: 30px;" placeholder="Electromagenatic field theory" type="text" id="emft" value="" >
+<span style="margin-left: 150px;">
+
+       	<input style=" background: transparent;border: none; width: 100PX height:100px;  border-bottom: 2px solid black; " placeholder="Network analysis" type="text" id="na" value="" >  </span>
+       	<button style="width:100px; height: 40px; border-radius: 30px; transition: all .001 ; background-color:#99ccff; margin-top: 30px; margin-left: 60px; border:none;" onclick="fun()"> click to add</button>
+</div>
+
+<div style="width: 350px; height: 450px;  margin-top: -450px;background-color: black;" class="bb">
+	<br>
+<p style="color: #fff; margin-left: 50px;" id="para">  </p>
+<br>
+<p style="color: #fff; margin-left: 50px;" id="para2">  </p>
+
+<p style="color: #fff; margin-left: 50px;" id="para3">  </p>
+
+
+</div>
+
+
+
+
+<script type="text/javascript">
+	
+function fun() {
+var a = document.getElementById("del").value;
+var b = document.getElementById("eel").value;
+var c = document.getElementById("pcbl").value;
+var d = document.getElementById("gp").value;
+var e = document.getElementById("ip").value;
+var f = document.getElementById("ls").value;
+var g = document.getElementById("fed").value;
+var h = document.getElementById("emft").value;
+var i = document.getElementById("na").value;
+
+
+
+
+
+
+var j = parseFloat(a) +  parseFloat(b) +  parseFloat(c) +  parseFloat(d) +  parseFloat(e)
++  parseFloat(f) +  parseFloat(g) +  parseFloat(h) +  parseFloat(i)
+document.getElementById("para").innerHTML = " your total is" + "  " +" " +   " " + j;
+
+var k = document.getElementById("para2").innerHTML = " your percentage is " +" " +" " + " " + (j/1000)*100 + "%";
+
+var k = g
+
+
+if (g == "")
+ {
+	alert("Fill something");
+}
+
+} 
+
+</script>
+
+
+
+</body>
+</html>
